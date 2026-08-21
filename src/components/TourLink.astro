@@ -1,0 +1,20 @@
+---
+// Lightweight, script-free trigger shown on every page. On the homepage,
+// GuidedTour.astro progressively enhances this anchor's click to open the
+// tour in place instead of reloading. Elsewhere it's a plain navigation to
+// /?tour=1, which the homepage picks up and auto-opens on load.
+---
+
+<a
+	id="tour-trigger"
+	href="/?tour=1"
+	class="fixed bottom-4 left-4 z-40 inline-flex h-12 w-12 items-center justify-center rounded-full border-2 border-turf-50 bg-turf-950 text-gold-400 shadow-lg transition-colors hover:bg-turf-800 focus-visible:bg-turf-800"
+	aria-label="Take the guided tour"
+	title="Take the guided tour"
+>
+	<svg aria-hidden="true" viewBox="0 0 24 24" class="h-5 w-5 fill-none stroke-current stroke-2">
+		<circle cx="12" cy="12" r="9.5" />
+		<path d="M9.5 9.2a2.5 2.5 0 1 1 3.1 2.4c-.7.2-1.1.8-1.1 1.5v.4" stroke-linecap="round" />
+		<circle cx="12" cy="16.8" r="0.6" fill="currentColor" stroke="none" />
+	</svg>
+</a>

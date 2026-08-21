@@ -1,0 +1,11 @@
+---
+import { facility } from '../data/facility';
+---
+
+<div class="hidden items-center justify-between gap-4 bg-turf-950 px-6 py-2 text-xs text-turf-100 md:flex">
+	<p>{facility.address.full}</p>
+	<div class="flex items-center gap-4">
+		<a href={facility.phoneHref} class="hover:text-gold-300">{facility.phone}</a>
+		<a href={`mailto:${facility.email}`} class="hover:text-gold-300">{facility.email}</a>
+	</div>
+</div>

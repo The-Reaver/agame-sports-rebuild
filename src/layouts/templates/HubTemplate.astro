@@ -1,0 +1,46 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Hero from '../../components/Hero.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import FactList from '../../components/FactList.astro';
+import RelatedLinks from '../../components/RelatedLinks.astro';
+import CTASection from '../../components/CTASection.astro';
+import { getBreadcrumb, getSiblings } from '../../utils/navHelpers';
+
+interface Props {
+	entry: CollectionEntry<'pages'>;
+	href: string;
+	Content: any;
+}
+const { entry, href, Content } = Astro.props;
+const { data } = entry;
+const siblings = getSiblings(href);
+const hasFacts = Boolean(
+	(data.facts && data.facts.length > 0) || data.ageRange || data.priceNote || data.scheduleNote
+);
+---
+
+<Breadcrumb crumbs={getBreadcrumb(href)} />
+<Hero
+	eyebrow={data.heroEyebrow}
+	headline={data.heroHeadline}
+	sub={data.heroSub}
+	ctaLabel={data.ctaLabel}
+	ctaHref={data.ctaHref}
+/>
+{
+	hasFacts ? (
+		<div class="mx-auto grid max-w-5xl gap-10 px-6 py-12 lg:grid-cols-[1fr_18rem]">
+			<article class="prose prose-headings:font-display prose-headings:uppercase prose-a:text-turf-700 max-w-none">
+				<Content />
+			</article>
+			<FactList facts={data.facts} ageRange={data.ageRange} priceNote={data.priceNote} scheduleNote={data.scheduleNote} />
+		</div>
+	) : (
+		<article class="prose prose-headings:font-display prose-headings:uppercase prose-a:text-turf-700 mx-auto max-w-3xl px-6 py-12">
+			<Content />
+		</article>
+	)
+}
+<RelatedLinks title={`Explore ${data.title}`} links={siblings} />
+<CTASection ctaLabel={data.ctaLabel} ctaHref={data.ctaHref} />

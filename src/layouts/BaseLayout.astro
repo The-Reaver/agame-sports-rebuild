@@ -1,0 +1,93 @@
+---
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import ContactBar from '../components/ContactBar.astro';
+import TourLink from '../components/TourLink.astro';
+import { facility } from '../data/facility';
+import '../styles/global.css';
+
+interface Props {
+	title: string;
+	description: string;
+}
+
+const { title, description } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const businessId = new URL('/#business', Astro.site).toString();
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="canonical" href={canonicalURL} />
+		<title>{title} | A-Game Sports</title>
+		<meta name="description" content={description} />
+		<meta property="og:title" content={`${title} | A-Game Sports`} />
+		<meta property="og:description" content={description} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content={canonicalURL} />
+		<meta name="twitter:card" content="summary" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script type="application/ld+json" set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'SportsActivityLocation',
+			'@id': businessId,
+			url: Astro.site,
+			name: facility.name,
+			address: {
+				'@type': 'PostalAddress',
+				streetAddress: facility.address.street,
+				addressLocality: facility.address.city,
+				addressRegion: facility.address.state,
+				postalCode: facility.address.zip,
+			},
+			telephone: facility.phone,
+			email: facility.email,
+			// Mirrors facility.hours in src/data/facility.ts — update both if hours change.
+			// Does NOT reflect facility.hoursNote's seasonal exception (Sundays closed
+			// in summer except events) — that requires dated validFrom/validThrough
+			// ranges this data doesn't have. The caveat is shown to visitors in the
+			// footer; confirm current Sunday hours by phone before this is fully solved.
+			openingHoursSpecification: [
+				{
+					'@type': 'OpeningHoursSpecification',
+					dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+					opens: '09:00',
+					closes: '22:00',
+				},
+				{
+					'@type': 'OpeningHoursSpecification',
+					dayOfWeek: ['Saturday', 'Sunday'],
+					opens: '08:00',
+					closes: '19:00',
+				},
+			],
+			sameAs: [facility.social.facebook, facility.social.instagram, facility.social.twitter],
+		})} />
+	</head>
+	<body class="flex min-h-screen flex-col font-body">
+		<ContactBar />
+		<Nav />
+		<main id="main" tabindex="-1" class="flex-1 focus:outline-none">
+			<slot />
+		</main>
+		<Footer />
+		<TourLink />
+
+		<a
+			href={facility.phoneHref}
+			class="btn-primary fixed bottom-4 right-4 z-40 shadow-lg md:hidden"
+			aria-label={`Call A-Game Sports at ${facility.phone}`}
+		>
+			Call Now
+		</a>
+	</body>
+</html>

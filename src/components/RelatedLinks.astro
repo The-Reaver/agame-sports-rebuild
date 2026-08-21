@@ -1,0 +1,26 @@
+---
+import type { SitemapEntry } from '../data/sitemap';
+
+interface Props {
+	title: string;
+	links: SitemapEntry[];
+}
+const { title, links } = Astro.props;
+---
+
+{
+	links.length > 0 && (
+		<section class="mx-auto max-w-5xl px-6 py-10">
+			<h2 class="font-display text-lg text-turf-900">{title}</h2>
+			<ul class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+				{links.map((l) => (
+					<li>
+						<a href={l.href} class="card block transition-colors hover:border-gold-400 hover:bg-turf-50">
+							<span class="font-semibold text-turf-900">{l.label}</span>
+						</a>
+					</li>
+				))}
+			</ul>
+		</section>
+	)
+}

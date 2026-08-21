@@ -1,0 +1,36 @@
+---
+interface Fact {
+	label: string;
+	value: string;
+}
+interface Props {
+	facts?: Fact[];
+	ageRange?: string;
+	priceNote?: string;
+	scheduleNote?: string;
+}
+const { facts = [], ageRange, priceNote, scheduleNote } = Astro.props;
+
+const rows = [
+	...(ageRange ? [{ label: 'Ages', value: ageRange }] : []),
+	...(scheduleNote ? [{ label: 'Schedule', value: scheduleNote }] : []),
+	...(priceNote ? [{ label: 'Pricing', value: priceNote }] : []),
+	...facts,
+];
+---
+
+{
+	rows.length > 0 && (
+		<div class="card">
+			<h2 class="font-display text-sm text-turf-700">At a Glance</h2>
+			<dl class="mt-3 space-y-3">
+				{rows.map((row) => (
+					<div>
+						<dt class="font-mono text-xs uppercase tracking-wide text-turf-600">{row.label}</dt>
+						<dd class="text-sm text-turf-950">{row.value}</dd>
+					</div>
+				))}
+			</dl>
+		</div>
+	)
+}

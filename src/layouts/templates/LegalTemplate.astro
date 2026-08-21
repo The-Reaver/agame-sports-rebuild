@@ -1,0 +1,31 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import Hero from '../../components/Hero.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import CTASection from '../../components/CTASection.astro';
+import { getBreadcrumb } from '../../utils/navHelpers';
+import { facility } from '../../data/facility';
+
+interface Props {
+	entry: CollectionEntry<'pages'>;
+	href: string;
+	Content: any;
+}
+const { entry, href, Content } = Astro.props;
+const { data } = entry;
+---
+
+<Breadcrumb crumbs={getBreadcrumb(href)} />
+<Hero eyebrow={data.heroEyebrow} headline={data.heroHeadline} sub={data.heroSub} tone="light" />
+<article class="prose prose-headings:font-display prose-headings:uppercase prose-a:text-turf-700 mx-auto max-w-3xl px-6 py-12">
+	<Content />
+</article>
+<section class="mx-auto max-w-3xl px-6 pb-16 text-sm text-turf-700">
+	<p>
+		Questions about any policy above? Call us at
+		<a href={facility.phoneHref} class="font-semibold text-turf-900 hover:text-gold-700">{facility.phone}</a>
+		or email
+		<a href={`mailto:${facility.email}`} class="font-semibold text-turf-900 hover:text-gold-700">{facility.email}</a>.
+	</p>
+</section>
+<CTASection ctaLabel={data.ctaLabel} ctaHref={data.ctaHref} />

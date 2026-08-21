@@ -1,0 +1,144 @@
+---
+import { primaryNav } from '../data/sitemap';
+import { facility } from '../data/facility';
+import { getGroupForHref } from '../utils/navHelpers';
+
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+
+// Compare by sitemap group, not URL prefix — a page like /fall-baseball/ isn't
+// a URL descendant of /baseball-programs/ but does belong to the same group,
+// and should still light up the "Sports" dropdown.
+const currentGroup = getGroupForHref(path);
+const isGroupActive = (item: (typeof primaryNav)[number]) =>
+	item.children
+		? item.children.some((c) => isActive(c.href) || (currentGroup && currentGroup === getGroupForHref(c.href)))
+		: isActive(item.href);
+---
+
+<header class="sticky top-0 z-50 border-b border-turf-800 bg-turf-950">
+	<a href="#main" class="skip-link">Skip to content</a>
+	<nav class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-3" aria-label="Primary">
+		<a href="/" class="font-display text-xl tracking-wide text-chalk-50">
+			A-Game <span class="text-gold-400">Sports</span>
+		</a>
+
+		<button
+			id="nav-toggle"
+			type="button"
+			class="rounded-md border border-turf-50 px-3 py-2 text-chalk-50 md:hidden"
+			aria-expanded="false"
+			aria-controls="nav-panel"
+		>
+			<span class="sr-only">Toggle menu</span>
+			<span aria-hidden="true">Menu</span>
+		</button>
+
+		<div id="nav-panel" class="hidden w-full flex-col gap-1 md:flex md:w-auto md:flex-row md:items-center md:gap-1">
+			{
+				primaryNav.map((item) => (
+					<div class="nav-item group relative">
+						{item.children ? (
+							<>
+								<button
+									type="button"
+									class:list={[
+										'nav-disclosure-btn flex w-full items-center justify-between gap-1 rounded-md px-3 py-2 text-left text-sm font-semibold text-chalk-100 hover:bg-turf-800 hover:text-gold-300 md:w-auto',
+										{ 'text-gold-400': isGroupActive(item) },
+									]}
+									aria-expanded="false"
+								>
+									{item.label}
+									<svg aria-hidden="true" viewBox="0 0 12 8" class="h-2.5 w-2.5 fill-current">
+										<path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none" />
+									</svg>
+								</button>
+								<div class="nav-submenu hidden flex-col gap-0.5 rounded-md border border-turf-800 bg-turf-900 p-2 md:absolute md:left-0 md:top-full md:w-64 md:shadow-lg">
+									{item.children.map((child) => (
+										<a
+											href={child.href}
+											class:list={[
+												'rounded px-3 py-2 text-sm text-chalk-100 hover:bg-turf-800 hover:text-gold-300',
+												{ 'text-gold-400': isActive(child.href) },
+											]}
+										>
+											{child.label}
+										</a>
+									))}
+								</div>
+							</>
+						) : (
+							<a
+								href={item.href}
+								class:list={[
+									'block rounded-md px-3 py-2 text-sm font-semibold text-chalk-100 hover:bg-turf-800 hover:text-gold-300',
+									{ 'text-gold-400': isActive(item.href) },
+								]}
+							>
+								{item.label}
+							</a>
+						)}
+					</div>
+				))
+			}
+			<a id="nav-book-tour" href="/contact/" class="btn-primary mt-2 md:ml-2 md:mt-0">Book a Tour</a>
+			<a href={facility.phoneHref} class="mt-1 px-3 py-2 text-sm text-chalk-100 md:hidden">
+				Call {facility.phone}
+			</a>
+		</div>
+	</nav>
+</header>
+
+<style>
+	@media (min-width: 768px) {
+		.group:hover .nav-submenu,
+		.group:focus-within .nav-submenu {
+			display: flex;
+		}
+	}
+</style>
+
+<script>
+	const toggle = document.getElementById('nav-toggle');
+	const panel = document.getElementById('nav-panel');
+
+	toggle?.addEventListener('click', () => {
+		const expanded = toggle.getAttribute('aria-expanded') === 'true';
+		toggle.setAttribute('aria-expanded', String(!expanded));
+		panel?.classList.toggle('hidden');
+		panel?.classList.toggle('flex');
+	});
+
+	function setDisclosure(btn: HTMLButtonElement, open: boolean) {
+		const submenu = btn.nextElementSibling as HTMLElement | null;
+		btn.setAttribute('aria-expanded', String(open));
+		submenu?.classList.toggle('hidden', !open);
+		submenu?.classList.toggle('flex', open);
+	}
+
+	const disclosureBtns = Array.from(document.querySelectorAll<HTMLButtonElement>('.nav-disclosure-btn'));
+
+	disclosureBtns.forEach((btn) => {
+		btn.addEventListener('click', () => {
+			const isOpen = btn.getAttribute('aria-expanded') === 'true';
+			// Only one dropdown open at a time.
+			disclosureBtns.forEach((other) => other !== btn && setDisclosure(other, false));
+			setDisclosure(btn, !isOpen);
+		});
+	});
+
+	document.addEventListener('click', (e) => {
+		const target = e.target as Node;
+		disclosureBtns.forEach((btn) => {
+			if (btn.getAttribute('aria-expanded') === 'true' && !btn.closest('.nav-item')?.contains(target)) {
+				setDisclosure(btn, false);
+			}
+		});
+	});
+
+	document.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape') {
+			disclosureBtns.forEach((btn) => setDisclosure(btn, false));
+		}
+	});
+</script>

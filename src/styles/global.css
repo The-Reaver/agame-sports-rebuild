@@ -1,0 +1,88 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@theme {
+	/* Turf & scoreboard palette — warm, energetic, still calm enough to read as a serious operator */
+	--color-turf-950: #0a1f13;
+	--color-turf-900: #0f2e1a;
+	--color-turf-800: #163f24;
+	--color-turf-700: #1e5230;
+	--color-turf-600: #276b3d;
+	--color-turf-500: #34864e;
+	--color-turf-100: #e3f2e6;
+	--color-turf-50: #f2f9f3;
+
+	--color-gold-700: #8a6a0c;
+	--color-gold-600: #b8860f;
+	--color-gold-500: #d9a520;
+	--color-gold-400: #e8bc3f;
+	--color-gold-300: #f2d270;
+	--color-gold-100: #fbf1d6;
+
+	--color-chalk-50: #fffdf8;
+	--color-chalk-100: #faf6ec;
+	--color-ink-900: #171712;
+
+	--font-display: 'Anton', 'Arial Narrow', sans-serif;
+	--font-body: 'Inter', system-ui, sans-serif;
+	--font-mono: 'Space Mono', ui-monospace, monospace;
+
+	--radius-card: 0.75rem;
+}
+
+@layer base {
+	html {
+		font-family: var(--font-body);
+		scroll-behavior: smooth;
+		scroll-padding-top: 4.5rem;
+	}
+	@media (min-width: 768px) {
+		html {
+			scroll-padding-top: 6.5rem;
+		}
+	}
+	body {
+		background-color: var(--color-chalk-50);
+		color: var(--color-ink-900);
+	}
+	h1,
+	h2,
+	h3,
+	.font-display {
+		font-family: var(--font-display);
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+	}
+	:focus-visible {
+		outline: 3px solid var(--color-gold-500);
+		outline-offset: 2px;
+	}
+	@media (prefers-reduced-motion: reduce) {
+		html {
+			scroll-behavior: auto;
+		}
+		*,
+		*::before,
+		*::after {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+			scroll-behavior: auto !important;
+		}
+	}
+}
+
+@layer components {
+	.btn-primary {
+		@apply inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 px-6 py-3 font-display text-sm tracking-wide text-turf-950 shadow-sm transition-colors hover:bg-gold-400 focus-visible:bg-gold-400;
+	}
+	.btn-secondary {
+		@apply inline-flex items-center justify-center gap-2 rounded-full border-2 border-turf-50 px-6 py-3 font-display text-sm tracking-wide text-turf-50 transition-colors hover:bg-turf-800 focus-visible:bg-turf-800;
+	}
+	.card {
+		@apply rounded-[var(--radius-card)] border border-turf-100 bg-white p-6 shadow-sm;
+	}
+	.skip-link {
+		@apply sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-gold-500 focus:px-4 focus:py-2 focus:text-turf-950;
+	}
+}

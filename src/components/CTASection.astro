@@ -1,0 +1,21 @@
+---
+import { facility } from '../data/facility';
+
+interface Props {
+	ctaLabel?: string;
+	ctaHref?: string;
+}
+const { ctaLabel = 'Book a Tour', ctaHref = '/contact/' } = Astro.props;
+const showSecondary = facility.phoneHref !== ctaHref;
+---
+
+<section id="tour-cta" class="bg-turf-900 px-6 py-12 text-center text-chalk-50">
+	<h2 class="font-display text-2xl">Ready to see A-Game for yourself?</h2>
+	<p class="mx-auto mt-2 max-w-xl text-sm text-turf-100">
+		Call, email, or stop by {facility.address.full} — we'll help you find the right program for your kid.
+	</p>
+	<div class="mt-6 flex flex-wrap justify-center gap-3">
+		<a id="cta-book-button" href={ctaHref} class="btn-primary">{ctaLabel}</a>
+		{showSecondary && <a href={facility.phoneHref} class="btn-secondary">{facility.phone}</a>}
+	</div>
+</section>

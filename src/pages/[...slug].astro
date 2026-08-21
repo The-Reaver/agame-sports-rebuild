@@ -1,0 +1,39 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HubTemplate from '../layouts/templates/HubTemplate.astro';
+import DetailTemplate from '../layouts/templates/DetailTemplate.astro';
+import InfoTemplate from '../layouts/templates/InfoTemplate.astro';
+import LegalTemplate from '../layouts/templates/LegalTemplate.astro';
+
+export async function getStaticPaths() {
+	const idToHref = (id: string) => {
+		const cleaned = id.replace(/\/index$/, '').replace(/^index$/, '');
+		return `/${cleaned}/`.replace(/\/{2,}/g, '/');
+	};
+
+	const entries = await getCollection('pages');
+	return entries.map((entry) => {
+		const href = idToHref(entry.id);
+		const slug = href.replace(/^\/|\/$/g, '');
+		return { params: { slug }, props: { entry, href } };
+	});
+}
+
+const { entry, href } = Astro.props;
+const { Content } = await render(entry);
+
+const templates = {
+	hub: HubTemplate,
+	program: DetailTemplate,
+	camp: DetailTemplate,
+	info: InfoTemplate,
+	legal: LegalTemplate,
+} as const;
+
+const Template = templates[entry.data.template];
+---
+
+<BaseLayout title={entry.data.title} description={entry.data.description}>
+	<Template entry={entry} href={href} Content={Content} />
+</BaseLayout>

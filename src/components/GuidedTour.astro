@@ -1,0 +1,279 @@
+---
+// Homepage-only: renders the spotlight walkthrough and progressively enhances
+// the #tour-trigger link (from TourLink.astro, mounted globally in
+// BaseLayout) to open in place instead of navigating.
+import { facility } from '../data/facility';
+
+const steps = [
+	{
+		target: '#tour-hero',
+		title: 'This is A-Game Sports',
+		body: "Quick walkthrough — five stops, skip anytime. Let's look at how a parent actually finds and books a program here.",
+	},
+	{
+		target: '#find-your-sport',
+		title: 'Find a sport in one tap',
+		body: 'Every sport we teach is right here on the homepage — baseball, soccer, lacrosse, and more. Tapping any one of these jumps straight to that sport\'s ages, pricing, and lesson types.',
+	},
+	{
+		target: '#tour-programs',
+		title: 'Camps, travel teams, and events',
+		body: "Beyond weekly lessons: summer and school-break camps, competitive travel teams, and birthday parties or facility rentals — each with its own page.",
+	},
+	{
+		target: '#nav-book-tour',
+		title: '"Book a Tour" is always one click away',
+		body: "This button rides along in the header on every single page, so a visitor is never more than one click from booking a visit or calling us.",
+	},
+	{
+		target: '#cta-book-button',
+		title: "You're ready to explore",
+		body: `Every page ends with a direct way to reach us — call, email, or stop by ${facility.address.street}. That's the whole tour. Explore any sport or program from here.`,
+	},
+];
+---
+
+<div
+	id="tour-spotlight"
+	class="pointer-events-none fixed z-[55] hidden rounded-lg border-2 border-gold-400"
+	style="box-shadow: 0 0 0 9999px rgba(8, 15, 10, 0.68);"
+></div>
+
+<div id="tour-card-wrap" class="pointer-events-none fixed inset-x-0 bottom-4 z-[60] hidden justify-center px-4">
+	<div
+		id="tour-dialog"
+		role="dialog"
+		aria-modal="false"
+		aria-labelledby="tour-title"
+		aria-describedby="tour-body"
+		class="pointer-events-auto w-full max-w-md rounded-2xl border border-turf-800 bg-turf-950 p-6 text-chalk-50 shadow-2xl"
+	>
+		<p class="font-mono text-xs text-gold-400" id="tour-step-count"></p>
+		<h2 id="tour-title" class="mt-2 font-display text-xl"></h2>
+		<p id="tour-body" class="mt-3 text-sm text-turf-100"></p>
+
+		<div class="mt-6 flex items-center justify-between gap-3">
+			<button id="tour-skip" type="button" class="text-sm text-turf-100 underline hover:text-gold-300">
+				Skip tour
+			</button>
+			<div class="flex gap-2">
+				<button id="tour-back" type="button" class="btn-secondary px-4 py-2 text-xs">Back</button>
+				<button id="tour-next" type="button" class="btn-primary px-4 py-2 text-xs">Next</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script define:vars={{ steps }}>
+function initTour() {
+	// #tour-trigger is rendered by TourLink.astro later in BaseLayout's body,
+	// after this inline script runs — so element lookups must be deferred
+	// until the DOM is fully parsed, not run at script-encounter time.
+	const trigger = document.getElementById('tour-trigger');
+	const spotlight = document.getElementById('tour-spotlight');
+	const cardWrap = document.getElementById('tour-card-wrap');
+	const dialog = document.getElementById('tour-dialog');
+	const titleEl = document.getElementById('tour-title');
+	const bodyEl = document.getElementById('tour-body');
+	const countEl = document.getElementById('tour-step-count');
+	const nextBtn = document.getElementById('tour-next');
+	const backBtn = document.getElementById('tour-back');
+	const skipBtn = document.getElementById('tour-skip');
+	const navToggle = document.getElementById('nav-toggle');
+	const navPanel = document.getElementById('nav-panel');
+
+	let index = 0;
+	let lastFocused = null;
+	let isOpen = false;
+	let positionRaf = null;
+	let positionTimer = null;
+	let openedNavPanelForTour = false;
+
+	function reducedMotion() {
+		return window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	}
+
+	function markSeen() {
+		try {
+			localStorage.setItem('agame-tour-seen', '1');
+		} catch {}
+	}
+
+	function isPanelCollapsed() {
+		// The panel keeps the literal "hidden" class token at every breakpoint
+		// (Tailwind's `hidden md:flex` pattern) — only the computed display
+		// value reflects whether it's actually collapsed behind the hamburger.
+		return navPanel ? getComputedStyle(navPanel).display === 'none' : false;
+	}
+
+	function ensureVisible(el) {
+		if (!el || !navPanel || !navToggle) return;
+		if (navPanel.contains(el) && isPanelCollapsed()) {
+			navToggle.click();
+			openedNavPanelForTour = true;
+		}
+	}
+
+	function restoreNavPanel() {
+		if (openedNavPanelForTour && navToggle && navPanel && !isPanelCollapsed()) {
+			navToggle.click();
+		}
+		openedNavPanelForTour = false;
+	}
+
+	function positionSpotlight() {
+		if (!isOpen) return;
+		const step = steps[index];
+		const el = step.target ? document.querySelector(step.target) : null;
+		if (!el) {
+			spotlight.classList.add('hidden');
+			return;
+		}
+		const rect = el.getBoundingClientRect();
+		if (rect.width === 0 && rect.height === 0) {
+			spotlight.classList.add('hidden');
+			return;
+		}
+		const pad = 8;
+		spotlight.style.top = `${Math.max(rect.top - pad, 0)}px`;
+		spotlight.style.left = `${Math.max(rect.left - pad, 0)}px`;
+		spotlight.style.width = `${rect.width + pad * 2}px`;
+		spotlight.style.height = `${rect.height + pad * 2}px`;
+		spotlight.classList.remove('hidden');
+	}
+
+	function goToStep() {
+		const step = steps[index];
+		const el = step.target ? document.querySelector(step.target) : null;
+
+		titleEl.textContent = step.title;
+		bodyEl.textContent = step.body;
+		countEl.textContent = `Step ${index + 1} of ${steps.length}`;
+		backBtn.disabled = index === 0;
+		backBtn.classList.toggle('opacity-40', index === 0);
+		nextBtn.textContent = index === steps.length - 1 ? 'Got it' : 'Next';
+
+		if (step.target !== '#nav-book-tour') restoreNavPanel();
+
+		if (el) {
+			ensureVisible(el);
+			el.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'center' });
+			if (positionTimer) clearTimeout(positionTimer);
+			positionTimer = window.setTimeout(positionSpotlight, reducedMotion() ? 50 : 420);
+		} else {
+			spotlight.classList.add('hidden');
+		}
+	}
+
+	function onReposition() {
+		if (!isOpen) return;
+		if (positionRaf) cancelAnimationFrame(positionRaf);
+		positionRaf = requestAnimationFrame(positionSpotlight);
+	}
+
+	function open() {
+		if (isOpen) return;
+		lastFocused = document.activeElement;
+		isOpen = true;
+		markSeen();
+		cardWrap.classList.remove('hidden');
+		cardWrap.classList.add('flex');
+		index = 0;
+		goToStep();
+		nextBtn.focus();
+		document.addEventListener('keydown', onKeydown);
+		window.addEventListener('resize', onReposition);
+		window.addEventListener('scroll', onReposition, true);
+	}
+
+	function close() {
+		isOpen = false;
+		if (positionTimer) {
+			clearTimeout(positionTimer);
+			positionTimer = null;
+		}
+		if (positionRaf) {
+			cancelAnimationFrame(positionRaf);
+			positionRaf = null;
+		}
+		restoreNavPanel();
+		cardWrap.classList.add('hidden');
+		cardWrap.classList.remove('flex');
+		spotlight.classList.add('hidden');
+		document.removeEventListener('keydown', onKeydown);
+		window.removeEventListener('resize', onReposition);
+		window.removeEventListener('scroll', onReposition, true);
+		if (lastFocused instanceof HTMLElement) lastFocused.focus();
+		markSeen();
+	}
+
+	function onKeydown(e) {
+		if (e.key === 'Escape') return close();
+		if (e.key === 'Tab') {
+			const focusable = dialog.querySelectorAll('button');
+			const first = focusable[0];
+			const last = focusable[focusable.length - 1];
+			if (e.shiftKey && document.activeElement === first) {
+				e.preventDefault();
+				last.focus();
+			} else if (!e.shiftKey && document.activeElement === last) {
+				e.preventDefault();
+				first.focus();
+			}
+		}
+	}
+
+	trigger?.addEventListener('click', (e) => {
+		e.preventDefault();
+		open();
+	});
+	skipBtn?.addEventListener('click', close);
+	backBtn?.addEventListener('click', () => {
+		if (index > 0) {
+			index -= 1;
+			goToStep();
+		}
+	});
+	nextBtn?.addEventListener('click', () => {
+		if (index < steps.length - 1) {
+			index += 1;
+			goToStep();
+		} else {
+			close();
+		}
+	});
+
+	const params = new URLSearchParams(window.location.search);
+	if (params.get('tour') === '1') {
+		params.delete('tour');
+		const rest = params.toString();
+		history.replaceState(null, '', window.location.pathname + (rest ? `?${rest}` : ''));
+		window.setTimeout(open, 300);
+	} else {
+		try {
+			if (!localStorage.getItem('agame-tour-seen')) {
+				let userInteracted = false;
+				const markInteracted = () => {
+					userInteracted = true;
+				};
+				const opts = { once: true, passive: true };
+				window.addEventListener('scroll', markInteracted, opts);
+				window.addEventListener('pointerdown', markInteracted, opts);
+				window.addEventListener('keydown', markInteracted, opts);
+				window.setTimeout(() => {
+					window.removeEventListener('scroll', markInteracted, opts);
+					window.removeEventListener('pointerdown', markInteracted, opts);
+					window.removeEventListener('keydown', markInteracted, opts);
+					if (!userInteracted) open();
+				}, 1200);
+			}
+		} catch {}
+	}
+}
+
+if (document.readyState === 'loading') {
+	document.addEventListener('DOMContentLoaded', initTour);
+} else {
+	initTour();
+}
+</script>
