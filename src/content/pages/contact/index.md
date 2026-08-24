@@ -35,6 +35,7 @@ Prefer to write it out? Use the form below and let us know the best way to reach
   class="mt-4 grid gap-4 sm:grid-cols-2"
   aria-label="Contact form"
   method="POST"
+  action="/contact/thank-you/"
   data-netlify="true"
   netlify-honeypot="bot-field"
 >

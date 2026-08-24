@@ -9,9 +9,10 @@ import '../styles/global.css';
 interface Props {
 	title: string;
 	description: string;
+	noindex?: boolean;
 }
 
-const { title, description } = Astro.props;
+const { title, description, noindex = false } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const businessId = new URL('/#business', Astro.site).toString();
 ---
@@ -25,6 +26,7 @@ const businessId = new URL('/#business', Astro.site).toString();
 		<link rel="canonical" href={canonicalURL} />
 		<title>{title} | A-Game Sports</title>
 		<meta name="description" content={description} />
+		{noindex && <meta name="robots" content="noindex, follow" />}
 		<meta property="og:title" content={`${title} | A-Game Sports`} />
 		<meta property="og:description" content={description} />
 		<meta property="og:type" content="website" />
