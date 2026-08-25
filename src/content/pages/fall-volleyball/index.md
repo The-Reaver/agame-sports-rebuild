@@ -7,7 +7,8 @@ description: A-Game's fall volleyball season in New Rochelle — Fundamentals, I
 heroEyebrow: Volleyball · Fall Season
 heroHeadline: Fall play, sorted by where your player actually is.
 heroSub: From a first-timer's first bump to advanced-level reps, our fall volleyball tracks match players to the right level of competition.
-ctaLabel: Book a Tour
+scheduleNote: Fall volleyball tracks run on a seasonal schedule — call to confirm current dates and times
+ctaLabel: Ask About Fall Volleyball
 ctaHref: /contact/
 order: 1
 ---
