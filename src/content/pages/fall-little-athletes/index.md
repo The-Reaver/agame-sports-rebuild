@@ -22,7 +22,7 @@ ctaHref: /contact/
 order: 2
 ---
 
-Fall is when Little Athletes Academy runs its widest range of classes — sixteen different offerings, sorted by age, so a 10-month-old and a kindergarten-bound 5-year-old both land in the right room.
+Fall is when Little Athletes Academy runs its widest range of classes — nineteen different offerings, sorted by age, so a 10-month-old and a kindergarten-bound 5-year-old both land in the right room.
 
 ## What's running this fall
 
