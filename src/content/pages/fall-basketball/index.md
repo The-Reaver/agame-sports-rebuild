@@ -3,7 +3,7 @@ title: Fall Basketball
 template: program
 navGroup: Basketball
 sport: Basketball
-description: A-Game's fall basketball season in New Rochelle — instructional scrimmages, skill-building training, a girls-only program, and an outdoor 3-on-3 tournament.
+description: A-Game's fall basketball season in New Rochelle — scrimmages, skill training, a girls-only program, academy-style sessions, and a 3-on-3 tournament.
 heroEyebrow: Basketball · Fall Season
 heroHeadline: Fall is where the reps turn into real game reads.
 heroSub: Structured practice, live scrimmages, and tournament basketball keep New Rochelle players sharp between summer camp and winter league.
