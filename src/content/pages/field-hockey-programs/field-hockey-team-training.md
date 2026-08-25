@@ -5,18 +5,18 @@ navGroup: Field Hockey
 sport: Field Hockey
 description: Bring your full field hockey roster in to prep for a season or sharpen specific team skills at A-Game Sports in New Rochelle.
 heroEyebrow: Field Hockey · Team Training
-heroHeadline: Get your whole team on the same page.
-heroSub: Team training sessions are built around what your roster needs most — season prep, a specific skill, or conditioning that carries into game situations.
+heroHeadline: Corners, cutoffs, and a whole roster of reps.
+heroSub: Team training sessions are built around what your roster needs most — corner execution, defensive shape, or conditioning that carries into game situations.
 ctaLabel: Ask About Team Training
 ctaHref: /contact/
 order: 1
 ---
 
-Team training is a great way to get you and your teammates ready for an upcoming season, or to sharpen specific areas of the game during in-season play. Instead of individual reps, the whole roster trains together on our indoor turf.
+Team training gets your whole roster ready for an upcoming season, or sharpens specific team skills mid-season — corner execution, cutoffs, defensive shape — with the full group training together on our indoor turf instead of individual reps.
 
 ## Built around your team's needs
 
-We can focus a session on one specific aspect of the game — cutoffs, corners, defensive shape — or incorporate strength and conditioning into your team workouts to build up the athletes behind the skills. The goal is the same either way: maximize the performance of your players and build team camaraderie along the way.
+We can focus a session on one specific piece of the game — corners, cutoffs, defensive shape — or fold strength and conditioning into your team workouts to build up the athletes behind the skills. Either way, the goal is the same: sharpen your roster and build team camaraderie along the way.
 
 ## Scheduling and pricing
 

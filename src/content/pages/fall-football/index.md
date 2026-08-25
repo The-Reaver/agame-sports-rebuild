@@ -8,6 +8,7 @@ heroEyebrow: Flag Football · Fall Season
 heroHeadline: A full fall of scrimmages, leagues, and reps.
 heroSub: From first-timers in kindergarten to competitive travel-track players in middle school, our fall lineup has a flag football spot for nearly every grade.
 ageRange: "K – 8th grade, plus a Little Athletes option for younger kids"
+scheduleNote: Fall programs run on a seasonal schedule — call to confirm current dates and times
 facts:
   - label: K–2nd Grade
     value: "Instructional Scrimmages"

@@ -5,7 +5,7 @@ navGroup: Site-wide / Utility
 description: Our blog is moving over as part of the A-Game Sports rebuild — check back soon, or follow us on Instagram for what's happening at the facility right now.
 ctaLabel: Follow Us on Instagram
 ctaHref: https://www.instagram.com/agamesports/
-heroEyebrow: Site-wide / Utility
+heroEyebrow: Coming Soon
 heroHeadline: Our blog is moving in — bear with the boxes.
 heroSub: We're rebuilding the site from the ground up, and the blog is part of that process. New posts are coming; for now, here's where to find us.
 order: 1

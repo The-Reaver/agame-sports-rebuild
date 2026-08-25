@@ -15,13 +15,13 @@ facts:
   - label: Tryout fee
     value: "$25 non-refundable per scheduled tryout, or $40 for a private tryout"
   - label: Contact
-    value: "Joe Palmeri — joe@agamesports.net or (914) 278-9477"
+    value: "info@agamesports.net or (914) 278-9477"
 ctaLabel: Contact Us About Tryouts
 ctaHref: /contact/
 order: 2
 ---
 
-Westchester Heat is our competitive fastpitch travel program, sponsored by A-Game Sports and built on the same 25,250-square-foot indoor facility our lesson players train in every day — five batting cages, a full infield, pitching machines, and HitTrax analytics, all off I-95 and the Hutchinson Parkway in New Rochelle.
+Westchester Heat is our competitive fastpitch travel program, sponsored by A-Game Sports and built on the same 25,000-square-foot indoor facility our lesson players train in every day — batting cages, a full infield, pitching machines, and HitTrax analytics, right off I-95 (Exit 15) in New Rochelle.
 
 ## What Heat is about
 
@@ -31,7 +31,7 @@ Coaching here runs on **positive reinforcement, not humiliation**. Players get a
 
 Heat currently fields **10U and 12U** teams. Tryouts run on a scheduled basis for $25 (non-refundable administration fee); if none of the scheduled dates work, a private tryout is available for $40. Players attend one tryout session.
 
-Call **Joe Palmeri at (914) 278-9477** or email **joe@agamesports.net** to check the current tryout schedule and open roster spots — dates are added throughout the summer, so call ahead rather than relying on a fixed calendar.
+Call **(914) 278-9477** or email **info@agamesports.net** to check the current tryout schedule and open roster spots — dates are added throughout the summer, so call ahead rather than relying on a fixed calendar.
 
 ## How Heat connects to our lesson programs
 

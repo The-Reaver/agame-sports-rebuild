@@ -16,7 +16,7 @@ facts:
   - label: Academics
     value: Art, science, music, quiet time, math, phonics
   - label: Forms due
-    value: Medical form + immunization record required before the first day
+    value: Medical form required before the first day
 ctaLabel: Reserve a Week
 ctaHref: /contact/
 order: 1
@@ -34,4 +34,4 @@ Multiple weeks are available across the summer, and pricing steps down the more 
 
 ## Before the first day
 
-A completed **medical form** and **immunization record** must be on file before your camper's first day — see [release forms](/release-forms/) for how to submit both. Exact week dates are posted each spring; call to confirm this year's calendar.
+A completed **medical form** must be on file before your camper's first day — see [release forms](/release-forms/) for how to submit it. Exact week dates are posted each spring; call to confirm this year's calendar.

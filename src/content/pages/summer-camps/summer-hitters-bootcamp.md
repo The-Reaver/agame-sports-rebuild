@@ -34,4 +34,4 @@ A single 3-day session is **$195**. Book two for **$180/week ($360 total)**, or 
 
 ## Before the first day
 
-Medical forms are required before your camper's first session — see [policies](/policies/) for full details on what's needed and how to submit it. Exact session dates are posted each spring; call **(914) 278-9477** to confirm this year's calendar.
+Medical forms are required before your camper's first session — see [policies](/policies/) for what's needed and [release forms](/release-forms/) for how to submit it. Exact session dates are posted each spring; call **(914) 278-9477** to confirm this year's calendar.

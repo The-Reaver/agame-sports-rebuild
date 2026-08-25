@@ -18,7 +18,7 @@ facts:
   - label: Scoring
     value: Baskets count for 2 or 3 points
   - label: Bracket
-    value: Top 2 teams per division advance to a championship game; ties broken by point differential
+    value: Top 2 teams per division advance to a championship game; ties broken by win-loss record, then point differential
   - label: Awards
     value: Trophies for each division's championship team
 ctaLabel: Register a Team

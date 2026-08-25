@@ -5,7 +5,7 @@ navGroup: Field Hockey
 sport: Field Hockey
 description: Small group field hockey lessons at A-Game Sports in New Rochelle — 2 to 4 players, individualized coaching with built-in competition.
 heroEyebrow: Field Hockey · Small Group Lessons
-heroHeadline: Individual coaching, teammate energy.
+heroHeadline: Personal coaching, with a stick in every hand.
 heroSub: Small groups of 2 to 4 players keep the personal attention of a 1-on-1 lesson while adding the competitive push of training alongside teammates.
 ageRange: Groups of 2 to 4 players
 priceNote: "60-min sessions: 1 lesson $170 (2 players) / $220 (3) / $245 (4) · 5 lessons $725 / $925 / $1,045 · 10 lessons $1,200 / $1,560 / $1,760 — price is per package, not per player"
@@ -15,7 +15,7 @@ ctaHref: /contact/
 order: 1
 ---
 
-Small group field hockey lessons are designed for 2 to 4 players who share specific needs and desired areas of improvement. Instructors can work on any area of the game, and the built-in competition between players keeps the energy up while everyone gets real, individual coaching.
+Small group field hockey lessons pair 2 to 4 players who share similar goals — stick skills, footwork, or shooting — so instructors can drill exactly what the group needs while some built-in competition keeps everyone locked in.
 
 ## Session length and group size
 

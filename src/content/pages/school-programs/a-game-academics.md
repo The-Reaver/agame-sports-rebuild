@@ -10,10 +10,10 @@ facts:
   - label: Quad Pod ratio
     value: 4 students to 1 teacher
   - label: Director
-    value: Mrs. Nicole Goodrich, 20+ years in early childhood, elementary, and middle school education
+    value: Mrs. Nicole Goodrich, 28+ years in early childhood, elementary, and middle school education
 ctaLabel: Book a Session
 ctaHref: /contact/
-heroEyebrow: Academics / Pre-School
+heroEyebrow: After-School Academics
 heroHeadline: One teacher. One focus. Real progress.
 heroSub: Whether it's a single weak spot or a semester's worth of catching up, A-Game Academics pairs students with real educators, not a generic worksheet packet.
 order: 1
@@ -33,7 +33,7 @@ Reading, writing, mathematics, phonetics, and grammar — with the goal of helpi
 
 ## Led by
 
-Mrs. Nicole Goodrich directs the program — a long-time early childhood educator and program director with more than 20 years across early childhood, elementary, and middle school settings.
+Mrs. Nicole Goodrich directs the program — a long-time early childhood educator and program director with more than 28 years across early childhood, elementary, and middle school settings.
 
 ## Booking
 

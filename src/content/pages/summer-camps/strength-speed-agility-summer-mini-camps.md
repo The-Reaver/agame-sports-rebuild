@@ -14,7 +14,7 @@ facts:
   - label: Format
     value: 4-day sessions, grouped by age
   - label: Forms due
-    value: Medical form + immunization record required before the first day
+    value: Medical form required before the first day
 ctaLabel: Reserve a Session
 ctaHref: /contact/
 order: 1
@@ -32,4 +32,4 @@ Each 4-day session runs **$175 or $195**, depending on the week. Call to confirm
 
 ## Before the first day
 
-A completed **medical form** and **immunization record** must be on file before your camper's first session — see [release forms](/release-forms/) for how to submit both. Exact session dates are posted each spring; call to confirm this year's calendar.
+A completed **medical form** must be on file before your camper's first session — see [release forms](/release-forms/) for how to submit it. Exact session dates are posted each spring; call to confirm this year's calendar.

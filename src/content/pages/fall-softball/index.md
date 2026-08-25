@@ -5,7 +5,7 @@ navGroup: Softball
 sport: Softball
 description: Fall softball training series at A-Game Sports in New Rochelle — 5 Tool Player, Hitting for Power, Windmill Pitching, Cage Circuit, and Gold Glove Fielding.
 heroEyebrow: Softball · Fall Programs
-heroHeadline: Keep the season's momentum through the fall.
+heroHeadline: Five focused series to build on a summer of progress.
 heroSub: Five focused training series let your player build on a summer of progress instead of losing it over the offseason.
 scheduleNote: Fall series run on a seasonal schedule — call to confirm current dates and times
 ctaLabel: Ask About Fall Softball
@@ -13,7 +13,7 @@ ctaHref: /contact/
 order: 1
 ---
 
-Spring and summer aren't the only seasons that matter. A-Game's fall softball lineup keeps players sharp indoors while outdoor fields go quiet, so nobody starts next spring from scratch.
+Five series, one goal: keep the bat speed and windmill motion a player spent all summer building instead of watching them fade over the winter. A-Game's fall softball lineup runs indoors, long after the outdoor season wraps.
 
 ## This fall's series
 

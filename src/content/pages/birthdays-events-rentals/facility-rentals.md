@@ -3,7 +3,7 @@ title: Facility Rentals
 template: program
 navGroup: Birthdays / Events / Rentals
 description: Rent turf fields, batting cages, and more by the hour at A-Game Sports in New Rochelle — no full event package required.
-heroEyebrow: Birthdays / Events / Rentals
+heroEyebrow: Facility Rentals
 heroHeadline: Book the exact space you need, by the hour.
 heroSub: A batting cage for practice, half the turf for a pickup game, the party room for a meeting — rent it on its own, no package required.
 priceNote: "$15–$225/hour depending on space (examples: half field $150/hr · batting tunnel with HitTrax $90/hr · party room $70–$80/hr) — subject to change by season, time of day, and availability"

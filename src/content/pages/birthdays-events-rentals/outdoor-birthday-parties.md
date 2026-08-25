@@ -3,7 +3,7 @@ title: Outdoor Birthday Parties
 template: program
 navGroup: Birthdays / Events / Rentals
 description: A-Game Sports coaches bring the birthday party to your backyard, park, or field — outdoor birthday parties in and around New Rochelle.
-heroEyebrow: Birthdays / Events / Rentals
+heroEyebrow: Outdoor Birthday Parties
 heroHeadline: We bring the party to you.
 heroSub: Your backyard, a local park, or any spot big enough for sports — our coaches show up with the games and equipment.
 priceNote: "Classic Outdoor: $375/hour · +$100 for All-Star · +$150 for MVP · $100 non-refundable deposit"
@@ -17,7 +17,7 @@ Sometimes the party belongs at home, not at our facility — a backyard, the nei
 
 ## Packages
 
-**Classic Outdoor — $375/hour.** Outdoor play led by our coaches, with sanitized equipment. Covers 60+ minutes of sports play with a choice of up to three activities for a base group of 15 kids (additional kids are $20 each). One coach runs the party; a second coach is added for groups of 8 or more guests.
+**Classic Outdoor — $375/hour.** Outdoor play led by our coaches, with sanitized equipment. Covers 60+ minutes of sports play with a choice of up to three activities for a base group of 15 kids (additional kids are $20 each). Two coaches run the party.
 
 **All-Star add-on — +$100.** Adds paper goods and setup.
 

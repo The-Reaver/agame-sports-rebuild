@@ -8,7 +8,7 @@ facts:
     value: "15% off all lessons and programs, year-round, for active duty, veterans, and immediate family"
 ctaLabel: Ask About Current Specials
 ctaHref: /contact/
-heroEyebrow: Site-wide / Utility
+heroEyebrow: Current Offers
 heroHeadline: More than a decade in New Rochelle — and we're still celebrating.
 heroSub: We've been running specials tied to our 10-year anniversary alongside our regular seasonal offers. Because these rotate throughout the year, the fastest way to get the current list is a quick call.
 order: 1

@@ -3,7 +3,7 @@ title: Gym Membership
 template: program
 navGroup: Birthdays / Events / Rentals
 description: Recreational gym membership at A-Game Sports in New Rochelle — monthly, weekly, or daily access for ages 16 and up.
-heroEyebrow: Birthdays / Events / Rentals
+heroEyebrow: Open Gym Access
 heroHeadline: Your own key to the gym, on your schedule.
 heroSub: Monthly, weekly, or daily access to A-Game's recreational gym space — no program registration required.
 ageRange: 16 and older

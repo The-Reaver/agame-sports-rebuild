@@ -8,6 +8,7 @@ heroEyebrow: Little Athletes Academy · Fall Season
 heroHeadline: Their first fall season starts here.
 heroSub: From a Mommy & Me class at 10 months old to Pre-K Flag Football at 5, our fall lineup has a class sized for every little athlete.
 ageRange: "10 months – 6 years, depending on class"
+scheduleNote: Fall classes run on a seasonal schedule — call to confirm current dates and times
 facts:
   - label: Youngest classes
     value: "Mommy & Me (10–24 months), Music & Movement (ages 1–3)"
@@ -22,7 +23,7 @@ ctaHref: /contact/
 order: 2
 ---
 
-Fall is when Little Athletes Academy runs its widest range of classes — sixteen different offerings, sorted by age, so a 10-month-old and a kindergarten-bound 5-year-old both land in the right room.
+Fall is when Little Athletes Academy runs its widest range of classes — nineteen different offerings, sorted by age, so a 10-month-old and a kindergarten-bound 5-year-old both land in the right room.
 
 ## What's running this fall
 

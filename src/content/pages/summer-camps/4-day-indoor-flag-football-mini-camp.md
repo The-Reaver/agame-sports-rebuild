@@ -16,7 +16,7 @@ facts:
   - label: Location
     value: Indoors at A-Game Sports, 856 Main St, New Rochelle
   - label: Forms due
-    value: Medical form + immunization record required before the first day
+    value: Medical form required before the first day
 ctaLabel: Reserve a Session
 ctaHref: /contact/
 order: 1
@@ -34,4 +34,4 @@ A single 4-day session runs **$185**. Sign up for two sessions and the rate drop
 
 ## Before the first day
 
-A completed **medical form** and **immunization record** must be on file before your camper's first session — see [policies](/policies/) and [release forms](/release-forms/) for cancellation, makeup-session, and medical-form details. Exact session dates are posted each spring; call **(914) 278-9477** to confirm this year's calendar and lock in a spot before sessions fill.
+A completed **medical form** must be on file before your camper's first session — see [release forms](/release-forms/) for how to submit it, and [policies](/policies/) for cancellation and makeup-session details. Exact session dates are posted each spring; call **(914) 278-9477** to confirm this year's calendar and lock in a spot before sessions fill.

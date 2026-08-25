@@ -7,7 +7,7 @@ priceNote: "Per 1-hour session — 1-on-1: $140 single / $115 ea. for 5 / $100 e
 scheduleNote: "You set the dates and times, subject to facility availability — Mon–Fri 9:00am–10:00pm, Sat–Sun 8:00am–7:00pm"
 ctaLabel: Build My Program
 ctaHref: /contact/
-heroEyebrow: Site-wide / Utility
+heroEyebrow: Build Your Own Program
 heroHeadline: Your group, your schedule, your sport.
 heroSub: Not every group fits neatly into a scheduled class — Customized Programs let you set the dates, the group size, and the focus, and we build the sessions around it.
 order: 1

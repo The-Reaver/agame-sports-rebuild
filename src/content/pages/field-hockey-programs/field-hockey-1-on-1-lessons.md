@@ -5,8 +5,8 @@ navGroup: Field Hockey
 sport: Field Hockey
 description: One coach, one player, one plan. Field hockey 1-on-1 lessons at A-Game Sports in New Rochelle — built around each player's specific goals.
 heroEyebrow: Field Hockey · 1-on-1 Lessons
-heroHeadline: One coach. One player. One clear plan.
-heroSub: Every 1-on-1 session is built around what your player specifically needs to work on next — not a generic curriculum.
+heroHeadline: One coach. One habit to fix. One clear plan.
+heroSub: Every session zeroes in on exactly what your player needs next — stick skills, footwork, or the one habit that's holding their game back.
 priceNote: "40-min: $100 single / $425 for 5 / $730 for 10 · 60-min: $140 single / $575 for 5 / $1,000 for 10"
 scheduleNote: Scheduled directly with your instructor, based on facility hours
 ctaLabel: Book a Lesson

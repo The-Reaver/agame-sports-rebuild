@@ -5,7 +5,7 @@ navGroup: Soccer
 sport: Soccer
 description: Soccer team training at A-Game Sports in New Rochelle — customized full-roster sessions for soccer teams, indoors, year-round.
 heroEyebrow: Soccer · Team Training
-heroHeadline: Get your whole roster reps, not just your best players.
+heroHeadline: Full-roster reps for build-up play and set pieces.
 heroSub: Team training sessions are built around your team's actual needs — a specific phase of play, a strength and conditioning block, or both.
 scheduleNote: Custom-scheduled around your team's season and availability — call to set up a block
 ctaLabel: Ask About Team Training
@@ -17,7 +17,7 @@ Some things are hard to drill without a full team on the field — build-up play
 
 ## What a session covers
 
-Sessions are customized to your team — we can build a block around one specific phase of the game, or fold in strength and conditioning alongside soccer skill work. Either way, the goal is the same: get every player on the roster more reps, and build team camaraderie while doing it.
+We'll shape the session around what your team's missing — build-up play, pressing triggers, defensive shape, set pieces — with strength and conditioning folded in as needed. Every player gets more reps, not just your starting eleven, and the team builds camaraderie in the process.
 
 ## Who this is for
 

@@ -16,7 +16,7 @@ facts:
   - label: Activities
     value: Soccer, wiffleball, dodgeball, kickball, flag football, obstacle courses
   - label: Forms due
-    value: Medical form + immunization record required before the first day
+    value: Medical form required before the first day
 ctaLabel: Reserve a Week
 ctaHref: /contact/
 order: 1
@@ -34,4 +34,4 @@ Ten weeks run across the summer, and pricing steps down the more weeks you book:
 
 ## Before the first day
 
-A completed **medical form** and **immunization record** must be on file before your camper's first day — see [release forms](/release-forms/) for how to submit both. Exact week dates are posted each spring; call **(914) 278-9477** to confirm this year's calendar.
+A completed **medical form** must be on file before your camper's first day — see [release forms](/release-forms/) for how to submit it. Exact week dates are posted each spring; call **(914) 278-9477** to confirm this year's calendar.

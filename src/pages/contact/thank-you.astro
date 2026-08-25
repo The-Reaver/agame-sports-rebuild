@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import Hero from '../../components/Hero.astro';
+import { facility } from '../../data/facility';
+
+const crumbs = [
+	{ label: 'Home', href: '/' },
+	{ label: 'Contact', href: '/contact/' },
+	{ label: 'Message Sent', href: '/contact/thank-you/' },
+];
+---
+
+<BaseLayout
+	title="Message Sent"
+	description="Thanks for reaching out to A-Game Sports — your message is on its way to a real person."
+	noindex
+>
+	<Breadcrumb crumbs={crumbs} />
+	<Hero
+		eyebrow="Message sent"
+		headline="Thanks — we've got it."
+		sub={`We typically respond within one business day. If it's urgent, call us at ${facility.phone} and a real person will pick up.`}
+		ctaLabel={`Call ${facility.phone}`}
+		ctaHref={facility.phoneHref}
+		tone="light"
+		secondaryLabel="Back to Contact"
+		secondaryHref="/contact/"
+	/>
+	<section class="mx-auto max-w-2xl px-6 py-12 text-center">
+		<p class="text-turf-700">
+			While you wait, feel free to look around — see what's running right now on our
+			<a href="/" class="font-semibold text-turf-900 underline hover:text-turf-700">home page</a>,
+			or browse programs by sport in the menu above.
+		</p>
+	</section>
+</BaseLayout>
