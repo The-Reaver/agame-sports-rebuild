@@ -5,7 +5,7 @@ navGroup: Field Hockey
 sport: Field Hockey
 description: Fall field hockey at A-Game Sports in New Rochelle — level-based programs from first-timers to advanced training, indoors and outdoors.
 heroEyebrow: Field Hockey · Fall Programs
-heroHeadline: Keep the stick moving after outdoor season ends.
+heroHeadline: Level-based fall training, first-timer to advanced.
 heroSub: A lineup of level-based programs lets players keep building skills through the fall instead of waiting for next spring.
 scheduleNote: Fall programs run on a seasonal schedule — call to confirm current dates and times
 ctaLabel: Ask About Fall Field Hockey
@@ -13,7 +13,7 @@ ctaHref: /contact/
 order: 1
 ---
 
-Outdoor field hockey season doesn't have to be the only time your player gets real reps. A-Game's fall lineup keeps skills sharp with programs organized by level, so every player — from a first-timer to an advanced athlete — trains at the right pace.
+A first-timer and an advanced player need very different things from a fall program, which is exactly why A-Game's fall field hockey lineup is organized by level — six programs, indoors and outdoors while weather allows, so nobody's stuck training at the wrong pace.
 
 ## This fall's programs
 

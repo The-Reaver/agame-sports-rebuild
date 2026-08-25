@@ -5,7 +5,7 @@ navGroup: Lacrosse
 sport: Lacrosse
 description: Fall lacrosse at A-Game Sports in New Rochelle — level-based boys' and girls' programs from first-timers to advanced training, indoors and outdoors.
 heroEyebrow: Lacrosse · Fall Programs
-heroHeadline: Keep the stick moving after outdoor season ends.
+heroHeadline: A full boys' and girls' fall lineup, level by level.
 heroSub: A full lineup of level-based boys' and girls' programs lets players keep building skills through the fall instead of waiting for next spring.
 scheduleNote: Fall programs run on a seasonal schedule — call to confirm current dates and times
 ctaLabel: Ask About Fall Lacrosse
@@ -13,7 +13,7 @@ ctaHref: /contact/
 order: 1
 ---
 
-Outdoor lacrosse season doesn't have to be the only time your player gets real reps. A-Game's fall lineup keeps skills sharp with a deep set of programs organized by level and gender, so every player trains at the right pace.
+Boys and girls, first-timers through advanced dodgers — A-Game's fall lacrosse lineup is the deepest on our schedule, organized by level and gender so every player lands in the right group, indoors and outdoors while weather allows.
 
 ## This fall's programs
 

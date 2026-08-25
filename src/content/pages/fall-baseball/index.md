@@ -5,7 +5,7 @@ navGroup: Baseball
 sport: Baseball
 description: Fall baseball training series at A-Game Sports in New Rochelle — from Baseball Beginnings to Travel Ready Training, for every age and skill level.
 heroEyebrow: Baseball · Fall Programs
-heroHeadline: Keep the season's momentum through the fall.
+heroHeadline: Thirteen series, from first swing to travel tryouts.
 heroSub: A full lineup of fall series lets your player build on a summer of progress indoors, whatever their age or focus area.
 scheduleNote: Fall series run on a seasonal schedule — call to confirm current dates and times
 ctaLabel: Ask About Fall Baseball
@@ -13,7 +13,7 @@ ctaHref: /contact/
 order: 1
 ---
 
-Spring and summer aren't the only seasons that matter. A-Game's fall baseball lineup is our biggest of the year, keeping players sharp indoors while outdoor fields go quiet, so nobody starts next spring from scratch.
+A-Game's fall baseball lineup is our biggest of the year — thirteen series deep — because winter doesn't have to be the reason a player loses the swing they spent all summer building. Our indoor cages and mounds keep the reps coming long after the outdoor fields close down.
 
 ## This fall's programs
 

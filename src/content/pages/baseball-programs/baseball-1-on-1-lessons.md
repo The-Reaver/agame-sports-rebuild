@@ -19,7 +19,7 @@ Group lessons are great for competitive energy. But when a player has one specif
 
 ## What a session covers
 
-Our instructors work across all four core skills: **hitting**, **fielding**, **pitching**, and **catching**. Every lesson starts with the player's specific goals, then breaks the mechanics down to their simplest form so the fix actually sticks — without losing what makes the game fun in the first place.
+Our instructors work across all four core skills — **hitting**, **fielding**, **pitching**, and **catching** — and build each lesson around your player's actual sticking point, whether that's timing on the load and stride or arm slot on the mound. Mechanics get broken down to their simplest form so the fix actually holds, without draining the fun out of the game.
 
 ## Session lengths and packages
 

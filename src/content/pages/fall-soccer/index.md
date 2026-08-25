@@ -5,7 +5,7 @@ navGroup: Soccer
 sport: Soccer
 description: Fall soccer training series at A-Game Sports in New Rochelle — from Soccer ABC's to Advanced Soccer Skills, indoors and outdoors while weather allows.
 heroEyebrow: Soccer · Fall Programs
-heroHeadline: Keep the season's momentum through the fall.
+heroHeadline: Seven series, from first touch to advanced play.
 heroSub: A full lineup of fall series lets your player build on a summer of progress, whatever their age or focus area.
 scheduleNote: Fall series run on a seasonal schedule — call to confirm current dates and times
 ctaLabel: Ask About Fall Soccer
@@ -13,7 +13,7 @@ ctaHref: /contact/
 order: 1
 ---
 
-Spring and summer aren't the only seasons that matter. A-Game's fall soccer lineup keeps players sharp as outdoor fields empty out, so nobody starts next spring from scratch.
+A player's first touch shouldn't have an offseason. A-Game's fall soccer lineup — seven series covering first-timers through advanced players — keeps it sharp indoors and out, for as long as the weather cooperates.
 
 ## This fall's programs
 

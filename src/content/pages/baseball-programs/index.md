@@ -16,7 +16,7 @@ Winter doesn't have to mean rust. A-Game's indoor cages, mounds, and turf mean y
 
 ## How players train with us
 
-**1-on-1 lessons** put one coach's full attention on one player's specific weak spot — hitting mechanics, glove work, a pitching motion that needs cleaning up. **Small group lessons** keep that individual coaching but add the competitive energy of training alongside two or three teammates. **Team training** brings a full roster in for situational reps — cutoffs, relays, defensive alignment — the stuff that's hard to drill solo.
+**1-on-1 lessons** zero in on one player's specific weak spot — a swing that needs rebuilding, glove work, an arm slot that's dropping. Bring a sibling or a couple of teammates for **small group lessons** and keep that same coaching focus with some competitive energy mixed in. When it's time to work as a unit, **team training** brings the whole roster in for cutoffs, relays, and defensive alignment — reps that are hard to get with just one or two players on the field.
 
 For players chasing something more competitive, our **[Westchester Fire travel program](/baseball-programs/fire-travel-baseball-teams/)** fields tournament-level teams for players ready for a bigger commitment. And every fall, **[Fall Baseball](/fall-baseball/)** keeps the swing sharp between summer and next spring.
 
