@@ -5,8 +5,8 @@ navGroup: Soccer
 sport: Soccer
 description: One coach, one player, one plan. Soccer 1-on-1 lessons at A-Game Sports in New Rochelle — shooting, dribbling, passing, defense, and goalkeeping.
 heroEyebrow: Soccer · 1-on-1 Lessons
-heroHeadline: One coach. One player. One clear plan.
-heroSub: Every 1-on-1 session is built around what your player specifically needs to work on next — not a generic curriculum.
+heroHeadline: One coach. One touch to clean up. One clear plan.
+heroSub: Whether it's a first touch, inconsistent finishing, or footwork on the ball — every session zeroes in on exactly what your player needs next.
 ageRange: All ages and skill levels
 priceNote: "40-min: $100 single / $425 for 5 / $730 for 10 · 60-min: $140 single / $575 for 5 / $1,000 for 10"
 scheduleNote: Scheduled directly with your instructor, based on facility hours

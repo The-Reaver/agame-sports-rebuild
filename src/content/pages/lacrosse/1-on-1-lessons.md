@@ -5,8 +5,8 @@ navGroup: Lacrosse
 sport: Lacrosse
 description: One coach, one player, one plan. Lacrosse 1-on-1 lessons at A-Game Sports in New Rochelle — shooting, passing, stick handling, goaltending, face-offs, and defense.
 heroEyebrow: Lacrosse · 1-on-1 Lessons
-heroHeadline: One coach. One player. One clear plan.
-heroSub: Every 1-on-1 session is built around what your player specifically needs to work on next — not a generic curriculum.
+heroHeadline: One coach. One stick skill to sharpen. One clear plan.
+heroSub: Whether it's shooting, passing, stick handling, goaltending, face-offs, or defense — every session zeroes in on exactly what your player needs next.
 priceNote: "40-min: $100 single / $425 for 5 / $730 for 10 · 60-min: $140 single / $575 for 5 / $1,000 for 10"
 scheduleNote: Scheduled directly with your instructor, based on facility hours
 ctaLabel: Book a Lesson
