@@ -7,7 +7,8 @@ description: A-Game's fall basketball season in New Rochelle — instructional s
 heroEyebrow: Basketball · Fall Season
 heroHeadline: Fall is where the reps turn into real game reads.
 heroSub: Structured practice, live scrimmages, and tournament basketball keep New Rochelle players sharp between summer camp and winter league.
-ctaLabel: Book a Tour
+scheduleNote: Fall basketball runs on a seasonal schedule — call to confirm current dates and times
+ctaLabel: Ask About Fall Basketball
 ctaHref: /contact/
 order: 1
 ---
