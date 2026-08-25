@@ -9,7 +9,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check-links": "linkinator ./dist --recurse --skip \"facebook.com|instagram.com|twitter.com\" --url-rewrite-search \"^https://agamesports\\.net\" --url-rewrite-replace \"/\"",
+    "verify": "npm run build && npm run check-links"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
@@ -17,5 +19,8 @@
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.2.1",
     "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "linkinator": "^8.0.4"
   }
 }
