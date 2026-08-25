@@ -34,11 +34,17 @@ ctaHref: string                  # defaults to "/contact/"
 heroEyebrow: string              # optional small line above the headline
 heroHeadline: string             # REQUIRED — the big hero line, fresh copy, not a copy-paste of the old title
 heroSub: string                  # optional supporting sentence
+heroImage: string                 # optional — path to a photo co-located next to this .md file, e.g. ./hero.jpg
+heroImageAlt: string               # required whenever heroImage is set — describe what's actually in the photo
 order: number                    # just use 1
 ---
 
 Markdown body here — the full rewritten page copy.
 ```
+
+## Adding a hero photo
+
+No pages ship with photos yet, but the pipeline is ready. To add one: drop a real photo of the facility, a coach, or a program in action (jpg/png/webp — never stock photography or anything that misrepresents the business) in the same folder as the page's `.md` file, then set both `heroImage: ./filename.jpg` and a descriptive `heroImageAlt` in frontmatter. Astro's `astro:assets` pipeline (wired into `Hero.astro` via `src/content.config.ts`'s `image()` schema helper) automatically optimizes it to WebP and switches the hero to a two-column layout. Omit both fields — the current default — and the hero renders exactly as it does today, no image.
 
 ## Which template for which page
 
