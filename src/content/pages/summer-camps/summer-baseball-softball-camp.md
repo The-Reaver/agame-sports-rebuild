@@ -16,7 +16,7 @@ facts:
   - label: What to bring
     value: Camper's own glove, bat, and helmet
   - label: Forms due
-    value: Medical form + immunization record required before the first day
+    value: Medical form required before the first day
 ctaLabel: Reserve a Week
 ctaHref: /contact/
 order: 1
@@ -34,4 +34,4 @@ Campers need their own **glove, bat, and helmet** — the one piece of gear we a
 
 ## Before the first day
 
-A completed **medical form** (physician-signed) and **immunization record** must be on file before your camper's first session — see [release forms](/release-forms/) for how to submit both. Exact week dates are confirmed each spring; call **(914) 278-9477** to lock in your weeks before they fill.
+A completed **medical form** (physician-signed) must be on file before your camper's first session — see [release forms](/release-forms/) for how to submit it. Exact week dates are confirmed each spring; call **(914) 278-9477** to lock in your weeks before they fill.

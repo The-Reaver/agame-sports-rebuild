@@ -16,7 +16,7 @@ facts:
   - label: Format
     value: Non-contact fundamentals, building to scrimmage games
   - label: Forms due
-    value: Medical form + immunization record required before the first day
+    value: Medical form required before the first day
 ctaLabel: Reserve a Week
 ctaHref: /contact/
 order: 1
@@ -34,4 +34,4 @@ Pricing runs **$300–$350 per week** depending on the session — the opening s
 
 ## Before the first day
 
-A completed **medical form** and **immunization record** must be on file before your camper's first session — see [release forms](/release-forms/) for how to submit both. Exact week dates are posted each spring; call to confirm this year's calendar and reserve a spot before it fills.
+A completed **medical form** must be on file before your camper's first session — see [release forms](/release-forms/) for how to submit it. Exact week dates are posted each spring; call to confirm this year's calendar and reserve a spot before it fills.

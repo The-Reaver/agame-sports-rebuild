@@ -16,7 +16,7 @@ facts:
   - label: Session length
     value: "90 minutes: warm-up, pitching drills, strength work, cool-down"
   - label: Forms due
-    value: Medical form + immunization record required before the first day
+    value: Medical form required before the first day
 ctaLabel: Reserve a Session
 ctaHref: /contact/
 order: 1
@@ -34,4 +34,4 @@ A single 3-day session is **$200**. Book two for **$185/week ($370 total)**, or 
 
 ## Before the first day
 
-A completed **medical form** and **immunization record** must be on file before your camper's first session — see [policies](/policies/) for cancellation and makeup-session details. Exact session dates are posted each spring; call to confirm this year's calendar.
+A completed **medical form** must be on file before your camper's first session — see [release forms](/release-forms/) for how to submit it, and [policies](/policies/) for cancellation and makeup-session details. Exact session dates are posted each spring; call to confirm this year's calendar.

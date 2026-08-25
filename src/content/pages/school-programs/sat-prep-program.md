@@ -17,7 +17,7 @@ facts:
     value: Geri Sheehan (English) and Siobhan Walsh (Math)
 ctaLabel: Reserve a Seat
 ctaHref: /contact/
-heroEyebrow: Academics / Pre-School
+heroEyebrow: SAT Prep
 heroHeadline: Six weeks to walk into test day ready.
 heroSub: A structured, in-person SAT course taught by two veteran educators — built to raise both scores and confidence before the spring test date.
 order: 1

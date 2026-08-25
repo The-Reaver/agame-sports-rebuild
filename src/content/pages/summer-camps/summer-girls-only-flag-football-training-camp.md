@@ -8,7 +8,7 @@ heroEyebrow: Summer Camp · Flag Football
 heroHeadline: A flag football camp built just for girls.
 heroSub: Position-specific fundamentals for quarterback, receiver, defensive back, and linebacker, followed by scrimmage games, in an all-girls group at Flowers Field.
 ageRange: Girls, ages 7–12
-priceNote: "1 week $300 · 2 wks $550 total ($275/wk) · 3 wks $750 total ($250/wk)"
+priceNote: "1 session $300 · 2 sessions $550 total ($275/session) · 3 sessions $750 total ($250/session)"
 scheduleNote: Monday–Thursday, 9:00am–12:00pm, at Flowers Field at City Park, New Rochelle
 facts:
   - label: Location
@@ -16,8 +16,8 @@ facts:
   - label: Format
     value: Non-contact fundamentals, building to scrimmage games
   - label: Forms due
-    value: Medical form + immunization record required before the first day
-ctaLabel: Reserve a Week
+    value: Medical form required before the first day
+ctaLabel: Reserve a Session
 ctaHref: /contact/
 order: 1
 ---
@@ -30,8 +30,8 @@ Some campers play their best football in a group of just girls — more reps, mo
 
 ## Weeks and pricing
 
-Book by the week: **$300** for one week, down to **$250/week ($750 total)** across three weeks.
+Book by the session (each session is a 4-day Monday–Thursday block): **$300** for one session, down to **$250/session ($750 total)** across three sessions.
 
 ## Before the first day
 
-A completed **medical form** and **immunization record** must be on file before your camper's first session — see [release forms](/release-forms/) for how to submit both. Exact week dates are posted each spring; call **(914) 278-9477** to confirm this year's calendar.
+A completed **medical form** must be on file before your camper's first session — see [release forms](/release-forms/) for how to submit it. Exact week dates are posted each spring; call **(914) 278-9477** to confirm this year's calendar.

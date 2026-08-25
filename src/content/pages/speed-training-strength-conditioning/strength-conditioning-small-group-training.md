@@ -15,7 +15,7 @@ ctaHref: /contact/
 order: 2
 ---
 
-Bring a training partner, a teammate, or a small group of friends. Small group training keeps the same individual coaching focus as our 1-on-1s but adds the energy of working alongside two or three others — which tends to push effort up.
+Bring a training partner, a teammate, or a small group of friends. Small group training keeps the same individual coaching focus as our 1-on-1s but adds the energy of working alongside one to three others — which tends to push effort up.
 
 ## What a session covers
 

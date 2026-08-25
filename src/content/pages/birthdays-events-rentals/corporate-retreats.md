@@ -3,7 +3,7 @@ title: Corporate Retreats
 template: program
 navGroup: Birthdays / Events / Rentals
 description: Corporate team-building retreats at A-Game Sports in New Rochelle — 25,000 square feet of turf, cages, and meeting space with catering options.
-heroEyebrow: Birthdays / Events / Rentals
+heroEyebrow: Corporate & Team Events
 heroHeadline: Team building that isn't another trust fall.
 heroSub: Bring your team into a 25,000-square-foot facility built for competition — turf fields, batting cages, and a meeting room, all under one roof.
 priceNote: Call for group pricing — packages are built around your team size, activities, and catering needs

@@ -3,7 +3,7 @@ title: Birthday Parties
 template: program
 navGroup: Birthdays / Events / Rentals
 description: Indoor birthday parties at A-Game Sports in New Rochelle — turf play, a private party room, pizza, and coaches running the games.
-heroEyebrow: Birthdays / Events / Rentals
+heroEyebrow: Indoor Birthday Parties
 heroHeadline: Turf time, pizza, and a room that's just yours.
 heroSub: Two coaches run the games, we handle the food and setup, and the birthday kid gets the floor for an hour.
 priceNote: "Classic: $595 (up to 15 kids, +$27 each additional) · All-Star: $750 · Just Play Classic: $250 (up to 8 kids, +$20 each additional) · Just Play All-Star: $350"
@@ -17,7 +17,7 @@ Nobody wants to run a birthday party and be the party at the same time. Ours are
 
 ## Packages
 
-**Classic — $595.** Up to 15 kids (additional kids $27 each). Includes 60 minutes of turf play with up to three activity choices, 30 minutes in a private party room, two party coaches plus a reception host, and pizza (4 pies), juice, water, tablecloths, paper goods, and candles. A summer promotion brings this down to $395 on select July and August dates, valid through May 31st for booking.
+**Classic — $595.** Up to 15 kids (additional kids $27 each). Includes 60 minutes of turf play with up to three activity choices, 30 minutes in a private party room, two party coaches plus a reception host, and pizza (4 pies), juice, water, tablecloths, paper goods, and candles. Ask about our current summer promotion — select July and August dates are sometimes available at a reduced rate if booked early enough in the year.
 
 **All-Star — $750.** Everything in Classic, plus sports bottles filled with candy for every guest. Additional kids are $30 each.
 

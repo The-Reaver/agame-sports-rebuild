@@ -8,16 +8,16 @@ priceNote: "Monthly tuition — Full-time 5 days: PK3 $1,550 / PK4 $1,300 · 3 d
 scheduleNote: "Monday–Friday. Full Day 8:30am–3:00pm · Half Day 8:30am–12:00pm · Extended Day 3:00–5:30pm (rate on request). Academic year runs after Labor Day through June; summer session also available"
 facts:
   - label: Director
-    value: Nicole Goodrich, 30+ years in early childhood education
+    value: Nicole Goodrich, 28+ years in early childhood education
   - label: Classroom staff
     value: Each classroom has a head teacher and an assistant teacher
   - label: Contact
     value: info@agamesports.net or (914) 278-9477
 ctaLabel: Schedule a Visit
 ctaHref: /contact/
-heroEyebrow: Academics / Pre-School
+heroEyebrow: Pre-School Academy
 heroHeadline: Pre-school with a gym down the hall.
-heroSub: A curriculum-based pre-school academy for ages 22 months to 5 years, led by a director with 30-plus years in early childhood education.
+heroSub: A curriculum-based pre-school academy for ages 22 months to 5 years, led by a director with 28-plus years in early childhood education.
 order: 1
 ---
 
@@ -49,4 +49,4 @@ A **$150 registration fee** applies to new students annually.
 
 ## Led by
 
-Director Nicole Goodrich brings more than 30 years of early childhood experience to the program. Reach her at **info@agamesports.net** or call **(914) 278-9477** to schedule a visit or ask about current openings. Looking for after-school academic support instead? See [A-Game Academics](/school-programs/a-game-academics/).
+Director Nicole Goodrich brings more than 28 years of early childhood experience to the program. Reach her at **info@agamesports.net** or call **(914) 278-9477** to schedule a visit or ask about current openings. Looking for after-school academic support instead? See [A-Game Academics](/school-programs/a-game-academics/).

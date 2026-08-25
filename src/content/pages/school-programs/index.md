@@ -3,7 +3,7 @@ title: School Programs
 template: hub
 navGroup: Academics / Pre-School
 description: A-Game Sports isn't just courts and turf — pre-school, tutoring, and SAT prep run out of the same New Rochelle building, taught by real educators.
-heroEyebrow: Academics / Pre-School
+heroEyebrow: Academics & Pre-School
 heroHeadline: Same building. Real classrooms, real teachers.
 heroSub: From a toddler's first day of pre-school to a high schooler cramming for the SAT, our academic programs are led by career educators — not coaches moonlighting as tutors.
 ctaLabel: Book a Tour
