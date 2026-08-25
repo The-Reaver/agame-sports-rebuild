@@ -22,7 +22,7 @@ Every A-Game participant needs a signed release form on file before their first 
 Summer campers need an additional medical form completed by a **physician**.
 
 - **Deadline:** Must be on file by **May 1** for that summer's camp season
-- **Submit to:** Our camp director, Nicole Goodrich, at [nicolegoodrich5@gmail.com](mailto:nicolegoodrich5@gmail.com), or to [info@agamesports.net](mailto:info@agamesports.net)
+- **Submit to:** [info@agamesports.net](mailto:info@agamesports.net), attention Camp Director Nicole Goodrich
 - **Important:** Campers cannot be admitted to camp until this form is on file — please don't wait until move-in week to submit it
 
 ## How to submit

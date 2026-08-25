@@ -12,7 +12,7 @@ facts:
   - label: Classroom staff
     value: Each classroom has a head teacher and an assistant teacher
   - label: Contact
-    value: nicolegoodrich5@gmail.com or (914) 278-9477
+    value: info@agamesports.net or (914) 278-9477
 ctaLabel: Schedule a Visit
 ctaHref: /contact/
 heroEyebrow: Academics / Pre-School
@@ -49,4 +49,4 @@ A **$150 registration fee** applies to new students annually.
 
 ## Led by
 
-Director Nicole Goodrich brings more than 30 years of early childhood experience to the program. Reach her directly at **nicolegoodrich5@gmail.com** or call **(914) 278-9477** to schedule a visit or ask about current openings. Looking for after-school academic support instead? See [A-Game Academics](/school-programs/a-game-academics/).
+Director Nicole Goodrich brings more than 30 years of early childhood experience to the program. Reach her at **info@agamesports.net** or call **(914) 278-9477** to schedule a visit or ask about current openings. Looking for after-school academic support instead? See [A-Game Academics](/school-programs/a-game-academics/).

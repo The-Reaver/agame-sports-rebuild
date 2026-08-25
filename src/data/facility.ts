@@ -15,7 +15,7 @@ export const facility = {
 	phone: '(914) 278-9477',
 	phoneHref: 'tel:+19142789477',
 	email: 'info@agamesports.net',
-	campDirectorEmail: 'nicolegoodrich5@gmail.com',
+	campDirectorEmail: 'info@agamesports.net',
 	hours: [
 		{ days: 'Monday – Friday', time: '9:00am – 10:00pm' },
 		{ days: 'Saturday – Sunday', time: '8:00am – 7:00pm' },

@@ -23,8 +23,7 @@ Additional hours are available by request. Summer hours vary and we're closed Su
 ## Reach us directly
 
 - **Phone:** [(914) 278-9477](tel:+19142789477)
-- **General questions:** [info@agamesports.net](mailto:info@agamesports.net)
-- **Camp forms specifically:** [nicolegoodrich5@gmail.com](mailto:nicolegoodrich5@gmail.com)
+- **General questions and camp forms:** [info@agamesports.net](mailto:info@agamesports.net)
 
 ## Send a message
 
